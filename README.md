@@ -10,6 +10,7 @@ A Finite State Machine is a computational abstraction that:
   - Can transition from one state to another
 
 > Source: “Taming Complexity In JavaScript With Machina.js” by Jim Cowart
+
 See also: http://en.wikipedia.org/wiki/Finite-state_machine
 
 ##Usage:
