@@ -1,5 +1,5 @@
 # machina
-Meteor package for [machina.js] Finite State Machine (FSM), client &amp; server
+Meteor package for [machina.js] [Finite State Machine] (FSM), client &amp; server
 
 ##Background:
 A Finite State Machine is a computational abstraction that:
@@ -9,9 +9,7 @@ A Finite State Machine is a computational abstraction that:
   - Can produce output determined by state &/or input
   - Can transition from one state to another
 
-> Source: “Taming Complexity In JavaScript With Machina.js” by Jim Cowart
-
-See also: http://en.wikipedia.org/wiki/Finite-state_machine
+''Source: “Taming Complexity In JavaScript With Machina.js” by Jim Cowart''
 
 ##Usage:
 The global namespace 'machina' is available in both client &amp; server contexts:
@@ -46,3 +44,4 @@ The global namespace 'machina' is available in both client &amp; server contexts
 http://code.dougneiner.com/presentations/machina
 
 [machina.js]:http://machina-js.org/
+[Finite State Machine]:http://en.wikipedia.org/wiki/Finite-state_machine
