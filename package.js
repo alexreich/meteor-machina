@@ -1,5 +1,6 @@
 Package.describe({
     name: "areich:machina",
+    version: "0.1.0",
     summary: "A Meteor library for creating workflow through powerful and flexible finite state machines.  Loosely inspired by Erlang/OTP\'s gen_fsm behavior.",
     git: "https://github.com/alexreich/machina"
 });
