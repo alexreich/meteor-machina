@@ -1,7 +1,7 @@
 # machina
 Meteor package for workflow: [machina.js] Finite State Machine (FSM), client &amp; server
 
-##Background:
+## Background:
 A [Finite State Machine] is a computational abstraction that:
   - Has a finite number of states in which it can exist
   - Can only be in one state at any time
@@ -11,17 +11,17 @@ A [Finite State Machine] is a computational abstraction that:
 
 Source: “Taming Complexity In JavaScript With Machina.js” by Jim Cowart
 
-##Usage:
+## Usage:
 The global namespace 'machina' is available in both client &amp; server contexts:
 
-##Example Template:
+## Example Template:
     <template name="connection_tpl">
       <div id="connection-div" class="col-sm-12 alert alert-success">
             <div><label>Connection Status:&nbsp;</label>{{connection_status}}</div>
       </div>
     </template>
 
-##Example View:
+## Example View:
     Deps.autorun(function () {
       var connected = Meteor.status().connected;
       Session.set("connected", connected);
@@ -53,7 +53,7 @@ The global namespace 'machina' is available in both client &amp; server contexts
     	}
     });
 
-#See Also:
+## See Also:
 http://code.dougneiner.com/presentations/machina
 
 [Finite State Machine]:http://en.wikipedia.org/wiki/Finite-state_machine
