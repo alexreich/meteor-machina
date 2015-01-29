@@ -22,22 +22,35 @@ The global namespace 'machina' is available in both client &amp; server contexts
     </template>
 
 ##Example View:
-    var Div_Connection = $(this.find("#connection-div"));
+    Deps.autorun(function () {
+      var connected = Meteor.status().connected;
+      Session.set("connected", connected);
+    });
 
-    var onlineFsm = new machina.Fsm({
-        initialState: "online",
-        states : {
-            online : {
-                   _onEnter: function() {
-                        Div_Connection.removeClass('alert-danger').addClass('alert-success');
-                    },			
+    Template.connection_tpl.rendered = function () {
+        var Div_Connection = $(this.find("#connection-div"));
+
+        var onlineFsm = new machina.Fsm({
+            initialState: "online",
+            states : {
+                online : {
+                       _onEnter: function() {
+                            Div_Connection.removeClass('alert-danger').addClass('alert-success');
+                        },
+                },
+                offline : {
+                       _onEnter: function() {
+                            Div_Connection.removeClass('alert-success').addClass('alert-danger');
+                        },
+                },
             },
-            offline : {
-                   _onEnter: function() {			           	
-                        Div_Connection.removeClass('alert-success').addClass('alert-danger');
-                    },
-            },
-        },
+        });
+    }
+
+    Template.connection_tpl.helpers({
+    	connection_status: function () {
+    	  return Session.get("connected") ? "On" : "Off";
+    	}
     });
 
 #See Also:
