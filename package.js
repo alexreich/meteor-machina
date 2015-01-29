@@ -1,5 +1,7 @@
 Package.describe({
-    summary: "A library for creating powerful and flexible finite state machines.  Loosely inspired by Erlang/OTP\'s gen_fsm behavior."
+    name: "alexreich:machina",
+    summary: "A Meteor library for creating powerful and flexible finite state machines.  Loosely inspired by Erlang/OTP\'s gen_fsm behavior.",
+    git: "https://github.com/alexreich/machina"
 });
 
 Npm.depends({
