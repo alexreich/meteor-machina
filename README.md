@@ -1,5 +1,5 @@
 # machina
-Meteor package for [machina.js] Finite State Machine (FSM), client &amp; server
+Meteor package for workflow: [machina.js] Finite State Machine (FSM), client &amp; server
 
 ##Background:
 A [Finite State Machine] is a computational abstraction that:
