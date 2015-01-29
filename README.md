@@ -54,7 +54,8 @@ The global namespace 'machina' is available in both client &amp; server contexts
     });
 
 ## See Also:
-http://code.dougneiner.com/presentations/machina
+[Taking control with machina.js]
 
 [Finite State Machine]:http://en.wikipedia.org/wiki/Finite-state_machine
 [machina.js]:http://machina-js.org/
+[Taking control with machina.js]:http://code.dougneiner.com/presentations/machina

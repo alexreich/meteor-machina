@@ -1,6 +1,6 @@
 Package.describe({
     name: "areich:machina",
-    version: "0.1.0",
+    version: "0.1.1",
     summary: "A Meteor library for creating workflow through powerful and flexible finite state machines.",
     git: "https://github.com/alexreich/meteor-machina"
 });
