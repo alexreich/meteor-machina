@@ -1,2 +1,1 @@
-_ = Npm.require('underscore');
-machina = Npm.require('machina')(_);
+machina = Npm.require('machina');
