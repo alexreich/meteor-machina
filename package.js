@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Npm.depends({
-    'machina': '0.3.8'
+    'machina': '1.0.0-1'
 });
 
 Package.on_use(function (api) {
